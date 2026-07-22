@@ -399,6 +399,61 @@ p {
   font-weight: 750;
 }
 
+.product-page {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.product-page__media {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff1e8;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.product-page__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-page__info h1 {
+  margin: .6rem 0 1rem;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: .96;
+}
+
+.product-page__description {
+  color: var(--muted);
+  margin: 1rem 0 1.4rem;
+}
+
+.product-page form {
+  display: grid;
+  gap: .9rem;
+  max-width: 420px;
+}
+
+.quantity-field {
+  display: grid;
+  gap: .35rem;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.quantity-field input {
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: .7rem .85rem;
+  font: inherit;
+}
+
 .site-footer {
   padding: 2rem 0;
   background: var(--ink);
@@ -441,7 +496,8 @@ p {
   .feature-grid,
   .pricing-grid,
   .schedule-grid,
-  .trainer-panel {
+  .trainer-panel,
+  .product-page {
     grid-template-columns: 1fr;
   }
 

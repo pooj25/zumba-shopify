@@ -1,0 +1,49 @@
+<section class="section section--white">
+  <div class="page-width product-page">
+    <div class="product-page__media">
+      {% if product.featured_media %}
+        {{ product.featured_media | image_url: width: 900 | image_tag: loading: 'eager', alt: product.title }}
+      {% else %}
+        {{ 'zumba-hero.svg' | asset_url | img_tag: product.title }}
+      {% endif %}
+    </div>
+
+    <div class="product-page__info">
+      <span class="eyebrow">Zumba pass</span>
+      <h1>{{ product.title }}</h1>
+      <div class="price">{{ product.selected_or_first_available_variant.price | money }}</div>
+
+      {% if product.description != blank %}
+        <div class="product-page__description">
+          {{ product.description }}
+        </div>
+      {% endif %}
+
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+        <label class="quantity-field">
+          Quantity
+          <input type="number" name="quantity" value="1" min="1">
+        </label>
+
+        <button class="button" type="submit" {% unless product.available %}disabled{% endunless %}>
+          {% if product.available %}
+            Add to cart
+          {% else %}
+            Sold out
+          {% endif %}
+        </button>
+
+        {{ form | payment_button }}
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main product",
+  "settings": []
+}
+{% endschema %}
