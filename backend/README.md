@@ -72,7 +72,7 @@ node server.js
 4. Add `SHOPIFY_WEBHOOK_SECRET` in Render environment variables.
 5. After deploy, open the Render URL to use the admin panel.
 
-This uses a paid Render web service with a persistent disk, because the backend stores student and attendance data in a JSON file.
+The current config uses Render's free plan for demo deployment. Free services can lose local JSON data after restart/redeploy. For production, use a paid persistent disk or a real database.
 
 Your Shopify webhook URL will be:
 

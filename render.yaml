@@ -3,14 +3,8 @@ services:
     name: zumba-backend
     runtime: docker
     rootDir: backend
-    plan: starter
+    plan: free
     healthCheckPath: /api/health
     envVars:
-      - key: DATA_DIR
-        value: /data
       - key: SHOPIFY_WEBHOOK_SECRET
         sync: false
-    disk:
-      name: zumba-data
-      mountPath: /data
-      sizeGB: 1

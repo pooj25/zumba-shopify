@@ -45,7 +45,7 @@ shopify theme push --store 1vgisa-0n.myshopify.com
 
 2. Backend goes to Render using `render.yaml`.
 
-The backend deploy uses a persistent disk so students, orders, and attendance do not disappear after restart.
+The current Render config uses the free plan for demo deployment. Free deploys can lose local JSON data after restart/redeploy. For real production, upgrade to a paid service with a persistent disk or move the backend to a real database.
 
 After backend deploy, connect Shopify webhook:
 
