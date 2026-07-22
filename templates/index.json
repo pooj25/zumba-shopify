@@ -64,7 +64,7 @@
             "benefit_two": "Studio orientation",
             "benefit_three": "Valid for 7 days",
             "button_label": "Buy trial",
-            "link": "/collections/all",
+            "link": "https://zumba-backend-trma.onrender.com/book.html?product=Trial%20Class",
             "highlight": false
           }
         },
@@ -80,7 +80,7 @@
             "benefit_two": "Use anytime this month",
             "benefit_three": "Shareable with family",
             "button_label": "Buy pass",
-            "link": "/collections/all",
+            "link": "https://zumba-backend-trma.onrender.com/book.html?product=10-Class%20Pass",
             "highlight": true
           }
         },
@@ -96,7 +96,7 @@
             "benefit_two": "Priority event access",
             "benefit_three": "Member-only playlist drops",
             "button_label": "Join now",
-            "link": "/collections/all",
+            "link": "https://zumba-backend-trma.onrender.com/book.html?product=Monthly%20Membership",
             "highlight": false
           }
         }
