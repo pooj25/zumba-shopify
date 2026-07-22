@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "hero": {
+      "type": "zumba-hero",
+      "settings": {
+        "eyebrow": "Dance fitness studio",
+        "heading": "Zumba That Moves You",
+        "text": "Book energetic Zumba classes, trial sessions, and monthly passes through a simple Shopify checkout.",
+        "primary_label": "Start with a trial",
+        "primary_link": "#pricing",
+        "secondary_label": "View schedule",
+        "secondary_link": "#schedule",
+        "stat_one": "45 min",
+        "stat_one_label": "high energy classes",
+        "stat_two": "3 plans",
+        "stat_two_label": "trial, pass, membership",
+        "stat_three": "All levels",
+        "stat_three_label": "beginner friendly"
+      }
+    },
+    "features": {
+      "type": "zumba-features",
+      "blocks": {
+        "trial": {
+          "type": "feature",
+          "settings": {
+            "icon": "01",
+            "heading": "Trial class",
+            "text": "Let new students buy a single introductory class before choosing a plan."
+          }
+        },
+        "passes": {
+          "type": "feature",
+          "settings": {
+            "icon": "02",
+            "heading": "Class passes",
+            "text": "Offer 5-class and 10-class packs for flexible attendance."
+          }
+        },
+        "membership": {
+          "type": "feature",
+          "settings": {
+            "icon": "03",
+            "heading": "Memberships",
+            "text": "Sell monthly unlimited access with Shopify's normal checkout flow."
+          }
+        }
+      },
+      "block_order": ["trial", "passes", "membership"],
+      "settings": {}
+    },
+    "pricing": {
+      "type": "zumba-pricing",
+      "blocks": {
+        "trial": {
+          "type": "plan",
+          "settings": {
+            "badge": "Starter",
+            "title": "Trial Class",
+            "price": "Rs. 199",
+            "price_note": "/ class",
+            "text": "Perfect for first-time students.",
+            "benefit_one": "One beginner-friendly class",
+            "benefit_two": "Studio orientation",
+            "benefit_three": "Valid for 7 days",
+            "button_label": "Buy trial",
+            "link": "/collections/all",
+            "highlight": false
+          }
+        },
+        "pass": {
+          "type": "plan",
+          "settings": {
+            "badge": "Popular",
+            "title": "10-Class Pass",
+            "price": "Rs. 1,499",
+            "price_note": "/ pass",
+            "text": "Best for flexible weekly attendance.",
+            "benefit_one": "10 Zumba sessions",
+            "benefit_two": "Use anytime this month",
+            "benefit_three": "Shareable with family",
+            "button_label": "Buy pass",
+            "link": "/collections/all",
+            "highlight": true
+          }
+        },
+        "monthly": {
+          "type": "plan",
+          "settings": {
+            "badge": "Unlimited",
+            "title": "Monthly Membership",
+            "price": "Rs. 2,499",
+            "price_note": "/ month",
+            "text": "For students who want full access.",
+            "benefit_one": "Unlimited regular classes",
+            "benefit_two": "Priority event access",
+            "benefit_three": "Member-only playlist drops",
+            "button_label": "Join now",
+            "link": "/collections/all",
+            "highlight": false
+          }
+        }
+      },
+      "block_order": ["trial", "pass", "monthly"],
+      "settings": {}
+    },
+    "schedule": {
+      "type": "zumba-schedule",
+      "blocks": {
+        "monday": {
+          "type": "class",
+          "settings": {
+            "day": "Monday - 6:30 PM",
+            "title": "Zumba Cardio",
+            "text": "High-energy cardio dance for all levels."
+          }
+        },
+        "wednesday": {
+          "type": "class",
+          "settings": {
+            "day": "Wednesday - 7:00 PM",
+            "title": "Bollywood Zumba",
+            "text": "Dance fitness with bright Bollywood-inspired tracks."
+          }
+        },
+        "saturday": {
+          "type": "class",
+          "settings": {
+            "day": "Saturday - 8:00 AM",
+            "title": "Weekend Burn",
+            "text": "A fresh weekend class with extra stretch time."
+          }
+        }
+      },
+      "block_order": ["monday", "wednesday", "saturday"],
+      "settings": {}
+    },
+    "trainer": {
+      "type": "zumba-trainer",
+      "settings": {}
+    }
+  },
+  "order": ["hero", "features", "pricing", "schedule", "trainer"]
+}

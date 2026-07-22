@@ -1,0 +1,21 @@
+<main class="section section--white">
+  <div class="page-width">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Gift card</span>
+        <h1>{{ gift_card.product.title }}</h1>
+      </div>
+      <p>{{ gift_card.initial_value | money }} gift card for {{ shop.name }}.</p>
+    </div>
+
+    <div class="price-card">
+      <h2>{{ gift_card.code | format_code }}</h2>
+      <p>Balance: {{ gift_card.balance | money }}</p>
+      {% if gift_card.enabled %}
+        <p>This gift card is active.</p>
+      {% else %}
+        <p>This gift card is disabled.</p>
+      {% endif %}
+    </div>
+  </div>
+</main>

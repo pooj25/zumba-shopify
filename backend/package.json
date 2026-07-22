@@ -1,0 +1,13 @@
+{
+  "name": "zumba-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend admin and Shopify webhook receiver for the Zumba class project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="page-width site-footer__inner">
+    <p><strong>{{ settings.brand_name | default: shop.name }}</strong> - Dance fitness classes, passes, and memberships.</p>
+    <p>{{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": []
+}
+{% endschema %}

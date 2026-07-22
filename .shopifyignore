@@ -1,0 +1,7 @@
+backend/*
+render.yaml
+preview.html
+README.md
+.git/*
+.agents/*
+.codex/*

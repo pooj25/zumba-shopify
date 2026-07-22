@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Energetic Zumba class illustration</title>
+  <desc id="desc">A colorful dance fitness class with an instructor and students moving in a bright studio.</desc>
+  <defs>
+    <linearGradient id="floor" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#fff2df"/>
+      <stop offset="1" stop-color="#f7d6c6"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" x2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d8fff6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="16" flood-color="#32231f" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="780" fill="url(#wall)"/>
+  <path d="M0 528 C215 475 405 535 607 503 C843 466 1016 420 1200 470 L1200 780 L0 780 Z" fill="url(#floor)"/>
+  <path d="M826 70 L1148 70 L1148 302 L826 302 Z" fill="#fff" opacity=".62"/>
+  <path d="M855 100 L1118 100 M855 150 L1118 150 M855 200 L1118 200 M855 250 L1118 250 M906 82 L906 292 M968 82 L968 292 M1030 82 L1030 292 M1092 82 L1092 292" stroke="#b7eee2" stroke-width="6" opacity=".85"/>
+  <circle cx="107" cy="151" r="76" fill="#ffd166" opacity=".76"/>
+  <g filter="url(#soft)">
+    <ellipse cx="731" cy="677" rx="338" ry="48" fill="#30231f" opacity=".14"/>
+    <g transform="translate(575 124)">
+      <path d="M169 170 C220 154 267 127 302 84" fill="none" stroke="#151313" stroke-width="22" stroke-linecap="round"/>
+      <path d="M154 178 C104 159 66 129 35 88" fill="none" stroke="#151313" stroke-width="22" stroke-linecap="round"/>
+      <circle cx="163" cy="92" r="49" fill="#6f3c2e"/>
+      <path d="M116 146 C139 126 188 124 213 146 C238 180 243 234 228 291 L101 291 C91 232 91 181 116 146 Z" fill="#ef476f"/>
+      <path d="M116 291 L82 486" fill="none" stroke="#151313" stroke-width="30" stroke-linecap="round"/>
+      <path d="M206 291 L272 481" fill="none" stroke="#151313" stroke-width="30" stroke-linecap="round"/>
+      <path d="M51 505 L113 505" stroke="#00a896" stroke-width="26" stroke-linecap="round"/>
+      <path d="M249 501 L312 501" stroke="#00a896" stroke-width="26" stroke-linecap="round"/>
+      <path d="M101 291 C139 314 189 314 228 291 L234 356 C187 376 139 376 94 356 Z" fill="#20302f"/>
+    </g>
+    <g transform="translate(288 228) scale(.88)">
+      <path d="M130 151 C86 119 60 88 43 45" fill="none" stroke="#151313" stroke-width="20" stroke-linecap="round"/>
+      <path d="M151 151 C188 127 225 103 262 62" fill="none" stroke="#151313" stroke-width="20" stroke-linecap="round"/>
+      <circle cx="142" cy="88" r="43" fill="#8f4d35"/>
+      <path d="M99 142 C119 121 162 119 185 142 C207 178 207 225 194 271 L92 271 C78 216 77 176 99 142 Z" fill="#00a896"/>
+      <path d="M102 271 L54 436" fill="none" stroke="#151313" stroke-width="27" stroke-linecap="round"/>
+      <path d="M180 271 L209 438" fill="none" stroke="#151313" stroke-width="27" stroke-linecap="round"/>
+      <path d="M32 454 L88 454" stroke="#ef476f" stroke-width="23" stroke-linecap="round"/>
+      <path d="M189 455 L244 455" stroke="#ef476f" stroke-width="23" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(870 250) scale(.78)">
+      <path d="M126 137 C80 127 45 104 19 70" fill="none" stroke="#151313" stroke-width="20" stroke-linecap="round"/>
+      <path d="M150 137 C197 123 236 96 265 55" fill="none" stroke="#151313" stroke-width="20" stroke-linecap="round"/>
+      <circle cx="139" cy="83" r="40" fill="#5c3328"/>
+      <path d="M98 131 C119 113 158 111 181 131 C200 164 203 211 190 260 L91 260 C78 209 78 164 98 131 Z" fill="#ffd166"/>
+      <path d="M98 260 L53 420" fill="none" stroke="#151313" stroke-width="26" stroke-linecap="round"/>
+      <path d="M178 260 L236 417" fill="none" stroke="#151313" stroke-width="26" stroke-linecap="round"/>
+      <path d="M31 439 L85 439" stroke="#00a896" stroke-width="22" stroke-linecap="round"/>
+      <path d="M215 436 L269 436" stroke="#00a896" stroke-width="22" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path d="M120 612 C192 585 260 585 334 612" stroke="#ef476f" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+  <path d="M802 558 C884 524 971 523 1068 558" stroke="#00a896" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+</svg>

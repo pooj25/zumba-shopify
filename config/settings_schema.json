@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brand_name",
+        "label": "Brand name",
+        "default": "Zumba Studio"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Browser theme color",
+        "default": "#ef476f"
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+<section id="pricing" class="section">
+  <div class="page-width">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">{{ section.settings.eyebrow }}</span>
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <p>{{ section.settings.text }}</p>
+    </div>
+
+    <div class="pricing-grid">
+      {% for block in section.blocks %}
+        <article class="price-card {% if block.settings.highlight %}price-card--highlight{% endif %}" {{ block.shopify_attributes }}>
+          {% if block.settings.badge != blank %}
+            <span class="badge">{{ block.settings.badge }}</span>
+          {% endif %}
+          <h3>{{ block.settings.title }}</h3>
+          <div class="price">{{ block.settings.price }} <small>{{ block.settings.price_note }}</small></div>
+          <p>{{ block.settings.text }}</p>
+          <ul>
+            <li>{{ block.settings.benefit_one }}</li>
+            <li>{{ block.settings.benefit_two }}</li>
+            <li>{{ block.settings.benefit_three }}</li>
+          </ul>
+          <a class="button" href="{{ block.settings.link }}">{{ block.settings.button_label }}</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zumba pricing",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Plans" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Sell classes as Shopify products" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Create these as products in Shopify, then update each button link to the matching product page." }
+  ],
+  "blocks": [
+    {
+      "type": "plan",
+      "name": "Plan",
+      "settings": [
+        { "type": "text", "id": "badge", "label": "Badge" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Trial Class" },
+        { "type": "text", "id": "price", "label": "Price", "default": "Rs. 199" },
+        { "type": "text", "id": "price_note", "label": "Price note", "default": "/ class" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Perfect for first-time students." },
+        { "type": "text", "id": "benefit_one", "label": "Benefit one", "default": "One beginner-friendly class" },
+        { "type": "text", "id": "benefit_two", "label": "Benefit two", "default": "Studio orientation" },
+        { "type": "text", "id": "benefit_three", "label": "Benefit three", "default": "Valid for 7 days" },
+        { "type": "text", "id": "button_label", "label": "Button label", "default": "Buy pass" },
+        { "type": "text", "id": "link", "label": "Link", "default": "/collections/all" },
+        { "type": "checkbox", "id": "highlight", "label": "Highlight card", "default": false }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Zumba pricing" }]
+}
+{% endschema %}

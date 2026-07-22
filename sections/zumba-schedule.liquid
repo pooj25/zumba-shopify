@@ -1,0 +1,44 @@
+<section id="schedule" class="section section--white">
+  <div class="page-width">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">{{ section.settings.eyebrow }}</span>
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <p>{{ section.settings.text }}</p>
+    </div>
+
+    <div class="schedule-grid">
+      {% for block in section.blocks %}
+        <article class="schedule-card" {{ block.shopify_attributes }}>
+          <time>{{ block.settings.day }}</time>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zumba schedule",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Schedule" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Weekly class rhythm" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Update these blocks from the Shopify theme editor when your timings change." }
+  ],
+  "blocks": [
+    {
+      "type": "class",
+      "name": "Class",
+      "settings": [
+        { "type": "text", "id": "day", "label": "Day and time", "default": "Monday - 6:30 PM" },
+        { "type": "text", "id": "title", "label": "Class title", "default": "Zumba Cardio" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "High-energy cardio dance for all levels." }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Zumba schedule" }]
+}
+{% endschema %}

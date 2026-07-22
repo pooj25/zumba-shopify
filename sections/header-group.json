@@ -1,0 +1,14 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "cta_label": "Book class",
+        "cta_link": "#pricing"
+      }
+    }
+  },
+  "order": ["header"]
+}
